@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ConsoleLogOnBuildWebpackPlugin = require("./plugins/ConsoleLogOnBuildWebpackPlugin/index.js");
+const MyExampleWebpackPlugin = require("./plugins/MyExampleWebpackPlugin/index.js");
 
 module.exports = {
   mode: process.env.NODE_ENV,
@@ -40,6 +41,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({template: "./src/index.html"}),
-    new ConsoleLogOnBuildWebpackPlugin({"options": "fuck u"})
+    new ConsoleLogOnBuildWebpackPlugin({"options": "fuck u"}),
+    new MyExampleWebpackPlugin({"options": "fuck u"})
   ]
 }
