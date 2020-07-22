@@ -15,6 +15,17 @@ module.exports = {
   },
   module: {
     rules: [
+      { 
+        test: /\.syl$/, 
+        use: [
+          {
+            loader: "./loaders/syl-loader/dist/index.js",
+            options: {
+              name: "syl"
+            }
+          }
+        ]
+      },
       { test: /\.txt$/, use: "raw-loader" },
       { test: /\.css$/, use: [
         {

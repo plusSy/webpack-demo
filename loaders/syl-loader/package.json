@@ -1,0 +1,19 @@
+{
+  "name": "syl-loader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "loader-utils": "^2.0.0",
+    "schema-utils": "^2.7.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.43.0"
+  }
+}
