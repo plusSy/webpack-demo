@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "loader-utils": "^2.0.0",
+    "loader-utils": "^1.4.2",
     "schema-utils": "^2.7.0"
   },
   "devDependencies": {
